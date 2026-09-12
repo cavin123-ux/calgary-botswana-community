@@ -1,0 +1,8 @@
+{
+  "name": "Remix Calgary Botswana Community Association",
+  "description": "A cultural and social home for Batswana in Calgary — celebrating Botswana\u0027s music, heritage and traditions. Join the 60th Independence Diamond Jubilee Gala.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

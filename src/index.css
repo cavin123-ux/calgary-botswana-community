@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-brand: oklch(13% 0.015 250);
+  --color-cream: oklch(98% 0.004 240);
+  --color-gold: oklch(72% 0.13 236);
+  --color-amber: oklch(84% 0.075 231);
+  --color-rose: oklch(76% 0.105 235);
+  --color-teal: oklch(88% 0.055 230);
+  --color-sage: oklch(63% 0.105 238);
+}
+
+:root {
+  --brand: oklch(13% 0.015 250);
+  --cream: oklch(98% 0.004 240);
+  --gold: oklch(72% 0.13 236);
+  --amber: oklch(84% 0.075 231);
+  --rose: oklch(76% 0.105 235);
+  --teal: oklch(88% 0.055 230);
+  --sage: oklch(63% 0.105 238);
+  --background: var(--brand);
+  --foreground: var(--cream);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--brand);
+  color: var(--cream);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.glass-panel {
+  background: color-mix(in oklab, var(--brand) 60%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.stained-wash {
+  background: radial-gradient(circle at 20% 15%, color-mix(in oklab, var(--gold) 25%, transparent), transparent 45%),
+              radial-gradient(circle at 85% 20%, color-mix(in oklab, var(--cream) 12%, transparent), transparent 40%),
+              radial-gradient(circle at 70% 85%, color-mix(in oklab, var(--teal) 18%, transparent), transparent 45%),
+              radial-gradient(circle at 15% 80%, color-mix(in oklab, var(--sage) 20%, transparent), transparent 40%);
+}
